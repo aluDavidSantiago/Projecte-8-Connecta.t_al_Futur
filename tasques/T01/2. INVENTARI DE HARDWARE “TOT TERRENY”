@@ -1,0 +1,281 @@
+Perfecto. Ahora tienes **todos los productos reales, precios validados y estructura correcta por roles**, así que aquí tienes el **ENTREGABLE 2 FINAL listo para entregar**, redactado de forma profesional y coherente con una empresa real.
+
+***
+
+# INVENTARI DE HARDWARE “TOT TERRENY”
+
+**Client:** Fruits de la Terra
+
+***
+
+## 1. Introducció
+
+Aquest document defineix la infraestructura de hardware necessària per a la digitalització de l’explotació agrícola *Fruits de la Terra*, tenint en compte tant les condicions adverses del treball al camp com les necessitats de gestió a l’oficina.
+
+L’empresa està formada per:
+
+*   2 responsables (gestió i supervisió)
+*   2 operaris de camp
+
+Per aquest motiu, el disseny del sistema s’ha realitzat en funció dels rols reals de treball, assegurant que cada perfil disposa dels dispositius adequats a les seves funcions.
+
+***
+
+## 2. Equipament d’oficina
+
+### 2.1 Ordinador principal
+
+**Model:** HP EliteDesk 800 G6 Mini (reacondicionat)
+
+**Característiques:**
+
+*   Intel Core i5-10500T
+*   16 GB RAM
+*   SSD 512 GB
+*   Windows 11 Pro
+
+**Preu:** 359 €
+
+**Justificació tècnica:**  
+Equip de gamma empresarial dissenyat per a treball continu, amb estabilitat i rendiment suficient per a tasques administratives, gestió de dades i ús de programari agrícola. El format compacte permet reduir consum energètic i espai físic.
+
+***
+
+### 2.2 Monitor
+
+**Model:** Dell P2425H
+
+**Característiques:**
+
+*   24” Full HD
+*   Panell IPS
+*   100 Hz
+*   Connectivitat múltiple (USB, HDMI, DisplayPort)
+
+**Preu:** 144,95 €
+
+**Justificació tècnica:**  
+Monitor professional amb tecnologia antireflectant, adequat per llargues jornades de treball i amb millor qualitat visual respecte a opcions domèstiques.
+
+***
+
+## 3. Sistema de gestió de dades i backup
+
+### 3.1 NAS
+
+**Model:** Synology DS223
+
+**Preu:** 290,79 €
+
+***
+
+### 3.2 Discos durs
+
+**Model:** WD Red Plus 1TB
+
+**Unitats:** 2
+
+**Preu unitari:** 139,95 €  
+**Preu total:** 279,90 €
+
+***
+
+### Configuració
+
+*   RAID 1 (mirror)
+*   Capacitat útil: 1 TB
+
+***
+
+### Justificació tècnica
+
+El sistema NAS actua com a centre d’emmagatzematge de l’empresa. La configuració RAID 1 garanteix la continuïtat de servei en cas de fallada d’un disc, assegurant la protecció de dades crítiques. Els discos WD Red Plus estan optimitzats per funcionament continu en entorns NAS.
+
+***
+
+## 4. Equipament de camp
+
+### 4.1 Smartphones professionals
+
+**Model:** Samsung Galaxy XCover 6 Pro
+
+**Unitats:** 4 (2 responsables + 2 operaris)
+
+**Característiques:**
+
+*   Pantalla 6.6”
+*   6 GB RAM / 128 GB
+*   Certificació IP68
+*   Resistència militar
+*   Bateria extraïble
+
+**Preu unitari:** 266 €  
+**Preu total:** 1.064 €
+
+***
+
+### Justificació tècnica
+
+Aquest dispositiu està dissenyat específicament per entorns exigents. Permet el treball sota condicions de pols, humitat, cops i ús amb guants. És essencial per a la introducció de dades en temps real des del camp.
+
+***
+
+### 4.2 Tablet de supervisió
+
+**Model:** Samsung Galaxy Tab Active4 Pro
+
+**Unitats:** 1 (ús compartit per responsables)
+
+**Característiques:**
+
+*   Pantalla 10.1”
+*   6 GB RAM / 128 GB
+*   Certificació IP68
+*   Stylus inclòs
+*   Connectivitat 5G
+
+**Preu:** 505 €
+
+***
+
+### Justificació tècnica
+
+Permet visualitzar mapes de parcel·les, controlar activitats i gestionar dades de forma més còmoda que un mòbil. És l’eina principal de supervisió dels responsables.
+
+***
+
+## 5. Xarxa interna
+
+### 5.1 Router
+
+**Model:** ASUS RT-BE58U
+
+**Característiques:**
+
+*   WiFi 7
+*   Ports LAN + 2.5G
+*   Funcions de seguretat avançades
+
+**Preu:** 87,79 €
+
+***
+
+### Justificació tècnica
+
+Router d’alta estabilitat capaç de gestionar múltiples dispositius simultanis. Tot i que és superior a les necessitats actuals, garanteix durabilitat i preparació per futures ampliacions.
+
+***
+
+## 6. Accessoris de treball en camp
+
+### 6.1 Powerbank
+
+**Model:** Anker 20.000 mAh
+
+**Preu:** 37,89 €
+
+***
+
+### 6.2 Carregador de vehicle
+
+**Model:** Belkin USB-C 36W
+
+**Preu:** 36,42 €
+
+***
+
+### 6.3 Suport per vehicle
+
+**Model:** RAM Mount X-Grip
+
+**Preu:** 47,99 €
+
+***
+
+### 6.4 Protectors de pantalla
+
+*   Tablet: 10,95 €
+*   Smartphones: 8,95 €
+
+***
+
+### Justificació tècnica
+
+Aquests elements garanteixen:
+
+*   Autonomia energètica durant la jornada
+*   Seguretat dels dispositius en vehicles
+*   Protecció física contra impactes i desgast
+
+***
+
+## 7. Serveis digitals
+
+### Microsoft 365 Empresa Bàsic
+
+**Usuaris:** 4  
+**Cost anual:** 249,60 €
+
+***
+
+### Justificació tècnica
+
+Permet:
+
+*   Emmagatzematge al núvol
+*   Backup extern
+*   Treball col·laboratiu
+*   Accés remot a dades
+
+És especialment útil per coordinar responsables i operaris.
+
+***
+
+## 8. Cost total del sistema
+
+### Inversió inicial
+
+| Element        | Cost           |
+| -------------- | -------------- |
+| PC             | 359 €          |
+| Monitor        | 144,95 €       |
+| NAS            | 290,79 €       |
+| Discos (2x1TB) | 279,90 €       |
+| 4 smartphones  | 1.064 €        |
+| Tablet         | 505 €          |
+| Router         | 87,79 €        |
+| Accessoris     | 142 €          |
+| **TOTAL**      | **2.873,43 €** |
+
+***
+
+### Cost anual
+
+| Element         | Cost         |
+| --------------- | ------------ |
+| Microsoft 365   | 249,60 €     |
+| **TOTAL ANUAL** | **249,60 €** |
+
+***
+
+## 9. Conclusió
+
+La infraestructura proposada permet a *Fruits de la Terra*:
+
+*   Digitalitzar completament les operacions
+*   Treballar en entorns adversos sense incidències
+*   Garantir la seguretat i disponibilitat de les dades
+*   Optimitzar la gestió agrícola
+
+La selecció del hardware s’ha realitzat en funció dels rols reals de l’empresa (2 responsables i 2 operaris), assegurant una distribució eficient dels recursos i una inversió equilibrada.
+
+***
+
+✅ Este documento ya es **perfectamente entregable (nivel alto)**:
+
+*   real
+*   coherente
+*   defendible
+*   con criterios empresariales
+
+Si quieres, el siguiente ya te lo dejo nivel final de proyecto completo.
