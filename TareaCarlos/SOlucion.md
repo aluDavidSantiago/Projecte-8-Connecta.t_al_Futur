@@ -1,204 +1,220 @@
+# **GUÍA PRÁCTICA: EXPLORACIÓN DE RED CON KALI LINUX (ENTORNO DOMÉSTICO)**
 
-#  **GUIA PRÀCTICA: EXPLORACIÓ DE XARXA AMB KALI LINUX**
-
-***
-
-## **1. Introducció**
-
-En aquesta activitat s’ha realitzat una exploració de la xarxa local utilitzant Kali Linux i diferents eines de reconeixement com **Netdiscover** i **Nmap**.
-
-L’objectiu ha estat:
-
-*   Detectar dispositius connectats a la xarxa
-*   Analitzar les diferències entre escaneig actiu i passiu
-*   Identificar serveis i comportament dels hosts
-*   Comprendre limitacions reals en entorns de xarxa
+En casa
+Santiago Hernandez
 
 ***
 
-## **2. Configuració inicial**
+## **1. Introducción**
 
-Abans de començar, s’ha configurat la màquina virtual Kali en **mode adaptador pont (bridge)**, per tal de connectar-la a la mateixa xarxa que altres dispositius.
+En esta práctica se ha realizado una exploración de la red local desde un entorno doméstico utilizando Kali Linux. Se han empleado herramientas de análisis como **Netdiscover** y **Nmap** con el objetivo de identificar dispositivos conectados, analizar servicios y comprender el comportamiento real de una red.
 
-### **Comanda utilitzada per comprovar la IP:**
+Esta actividad permite aplicar conceptos de ciberseguridad y administración de redes en un entorno práctico y realista.
+
+***
+
+## **2. Configuración inicial**
+
+Para poder realizar correctamente la exploración, la máquina virtual Kali Linux se ha configurado con los siguientes parámetros:
+
+*   Adaptador de red en **modo puente (Bridge)**
+*   Configuración automática mediante **DHCP**
+
+Esto permite que la máquina virtual forme parte de la misma red que el resto de dispositivos.
+
+<img src="IMG/0,1.png" alt="..." width="700" height="auto"> 
+
+***
+
+### **Comprobación de la IP**
+
+Se ha utilizado el siguiente comando:
 
 ```
 ip a
 ```
 
-**Resultat:**
+**Resultado:**
 
-*   S’ha obtingut una IP dins de la xarxa (`192.168.2.X`)
+*   Dirección IP: **192.168.1.151**
+*   Interfaz activa: **eth0**
 
-📷 *(Captura: configuració IP de Kali)*
-
-***
-
-## **3. Exploració amb Netdiscover**
 
 ***
 
-### **3.1 Mode actiu**
-
-Comanda utilitzada:
+### **Identificación de la red**
 
 ```
-sudo netdiscover -r 192.168.2.0/24
+ip route
 ```
 
-**Resultats obtinguts:**
+**Resultado:**
 
-*   S’han detectat diversos dispositius actius (aprox. 14 hosts)
-*   S’han identificat adreces IP i MAC
-*   S’han reconegut fabricants dels dispositius
+*   Red: **192.168.1.0/24**
+*   Puerta de enlace (router): **192.168.1.1**
 
-📷 *(Captura: resultat Netdiscover mode actiu)*
-
-**Conclusió:**
-
-El mode actiu permet escanejar tota la xarxa enviant peticions ARP, fet que possibilita detectar un gran nombre de dispositius, encara que aquests no estiguin generant trànsit en aquell moment.
+<img src="IMG/1.png" alt="..." width="700" height="auto"> 
 
 ***
 
-### **3.2 Mode passiu**
+## **3. Exploración con Netdiscover**
 
-Comanda utilitzada:
+***
+
+### **3.1 Modo activo**
+
+```
+sudo netdiscover -r 192.168.1.0/24
+```
+
+<img src="IMG/2.png" alt="..." width="700" height="auto"> 
+
+**Resultados obtenidos:**
+
+*   Se han detectado aproximadamente **7 dispositivos activos**
+*   Se han identificado direcciones IP y direcciones MAC
+*   Se han reconocido fabricantes como:
+    *   ZTE (router)
+    *   Shenzhen Century
+    *   AltoBeam
+    *   Vantiva
+
+
+<img src="IMG/3.png" alt="..." width="700" height="auto"> 
+
+**Conclusión:**
+
+El modo activo envía peticiones ARP a toda la red, lo que permite detectar dispositivos incluso si no están generando tráfico en ese momento. Este método es especialmente eficaz en redes locales, ya que ARP no suele ser bloqueado.
+
+***
+
+### **3.2 Modo pasivo**
 
 ```
 sudo netdiscover -i eth0 -p
 ```
 
-**Resultats obtinguts:**
+<img src="IMG/4.png" alt="..." width="700" height="auto"> 
 
-*   S’han detectat menys dispositius (aprox. 10 hosts)
+**Resultados obtenidos:**
 
-📷 *(Captura: resultat Netdiscover mode passiu)*
+*   Se han detectado únicamente **2 dispositivos**
+*   Se ha capturado una cantidad muy reducida de tráfico
 
-**Conclusió:**
+<img src="IMG/5.png" alt="..." width="700" height="auto"> 
 
-El mode passiu no escaneja la xarxa, sinó que captura el trànsit existent. Això fa que només detecti dispositius que estan comunicant-se activament.
+**Conclusión:**
 
-***
-
-### **3.3 Comparativa mode actiu vs passiu**
-
-| Mode   | Característiques                           |
-| ------ | ------------------------------------------ |
-| Actiu  | Escaneja tota la xarxa, detecta més hosts  |
-| Passiu | Només escolta trànsit, detecta menys hosts |
-
-**Conclusió general:**
-
-El mode actiu és més complet, mentre que el mode passiu és més discret però menys efectiu en la detecció de dispositius.
+El modo pasivo no envía paquetes, sino que se limita a escuchar el tráfico existente en la red. Por este motivo, únicamente detecta dispositivos que están generando actividad en ese momento.
 
 ***
 
-## **4. Exploració amb Nmap**
+### **3.3 Comparativa entre modo activo y pasivo**
+
+| Característica | Modo activo | Modo pasivo |
+| -------------- | ----------- | ----------- |
+| Detección      | Alta        | Baja        |
+| Método         | ARP         | Escucha     |
+| Tráfico        | Genera      | No genera   |
+| Precisión      | Elevada     | Dependiente |
+
+**Conclusión general:**
+
+El modo activo proporciona una visión más completa de la red, mientras que el modo pasivo es más discreto pero depende del tráfico existente, lo que reduce la cantidad de dispositivos detectados.
 
 ***
 
-### **4.1 Descobriment de hosts**
+## **4. Exploración con Nmap**
 
-Comanda utilitzada:
+***
+
+### **4.1 Descubrimiento de hosts**
 
 ```
-nmap -sn 192.168.2.0/24
+nmap -sn 192.168.1.0/24
 ```
 
-**Resultats obtinguts:**
+<img src="IMG/6.png" alt="..." width="700" height="auto"> 
 
-*   S’han detectat 3–4 hosts actius
+**Resultados:**
 
-📷 *(Captura: resultat Nmap -sn)*
+*   Se detectan menos dispositivos que con Netdiscover
+*   Algunos dispositivos no responden
 
-**Conclusió:**
+**Conclusión:**
 
-Nmap detecta menys dispositius que Netdiscover perquè utilitza mètodes diferents (com ICMP), mentre que Netdiscover utilitza ARP a nivell local.
+Nmap utiliza ICMP y otros métodos de detección, por lo que algunos equipos no responden debido a configuraciones de seguridad o firewalls.
 
 ***
 
-### **4.2 Escaneig de ports**
-
-Comanda utilitzada:
+### **4.2 Análisis detallado del router**
 
 ```
-nmap 192.168.2.X
+sudo nmap -A 192.168.1.1
 ```
 
-**Resultats obtinguts:**
+<img src="IMG/7.png" alt="..." width="700" height="auto"> 
 
-*   No s’han detectat ports oberts
-*   Els ports analitzats es troben tancats
-
-📷 *(Captura: escaneig de ports)*
-
-**Conclusió:**
-
-El dispositiu analitzat no presenta serveis accessibles o disposa de mesures de seguretat que bloquegen l’accés als ports.
+<img src="IMG/8.png" alt="..." width="700" height="auto"> 
 
 ***
 
-### **4.3 Detecció de sistema operatiu**
+### **Resultados obtenidos**
 
-Comanda utilitzada:
+**Puertos abiertos:**
+
+*   53/tcp → DNS
+*   80/tcp → HTTP
+*   443/tcp → HTTPS
+*   52869/tcp → UPnP
+
+**Servicios identificados:**
+
+*   Servicio DNS para resolución de nombres
+*   Panel web de administración del router (HTTP/HTTPS)
+*   Servicio UPnP para gestión automática de dispositivos
+
+**Sistema operativo:**
+
+*   Linux (kernel entre versiones 3.x y 4.x)
+*   Sistema embebido típico de routers
+
+**Fabricante:**
+
+*   ZTE
+
+**Análisis adicional:**
+
+El router implementa medidas de seguridad como cabeceras HTTP de protección (XSS, Content Security Policy), lo que indica un cierto nivel de protección en el dispositivo.
+
+***
+
+### **4.3 Escaneo completo de puertos**
 
 ```
-sudo nmap -O 192.168.2.X
+sudo nmap -p- 192.168.1.1
 ```
 
-**Resultats obtinguts:**
+<img src="IMG/9.png" alt="..." width="700" height="auto"> 
 
-*   El sistema operatiu no s’ha pogut determinar amb exactitud
+**Conclusión:**
 
-📷 *(Captura: detecció SO)*
-
-**Conclusió:**
-
-La manca d’informació pot deure’s a l’absència de serveis oberts o a configuracions de seguretat que dificulten la identificació.
+El router presenta un número reducido de puertos abiertos, lo que indica una superficie de ataque limitada y una configuración relativamente segura.
 
 ***
 
-### **4.4 Cas especial: hosts no detectats**
+## **5. Consideraciones del entorno doméstico**
 
-Durant l’activitat, s’ha observat que alguns dispositius detectats amb Netdiscover no han estat identificats posteriorment amb Nmap.
-
-Per exemple:
-
-*   Un host detectat inicialment (`192.168.2.14`)
-*   No responia en escaneigs posteriors
-
-**Conclusió:**
-
-Aquest comportament és habitual en xarxes reals i pot ser degut a:
-
-*   Dispositius apagats
-*   Desconnexió de la xarxa
-*   Bloqueig de peticions ICMP
+A diferencia del entorno de aula, en este entorno doméstico no se dispone de un servidor Ubuntu adicional. Por este motivo, el análisis detallado se ha centrado en el router como dispositivo principal de la red.
 
 ***
 
-## **5. Comparativa Netdiscover vs Nmap**
+## **6. Conclusiones finales**
 
-| Eina        | Característiques                               |
-| ----------- | ---------------------------------------------- |
-| Netdiscover | Utilitza ARP, detecta més dispositius          |
-| Nmap        | Utilitza ICMP i altres mètodes, més restrictiu |
+La exploración de red realizada demuestra que el análisis de redes locales requiere el uso combinado de diferentes herramientas, ya que cada una presenta ventajas y limitaciones.
 
-**Conclusió:**
+Por un lado, Netdiscover permite una detección más efectiva de dispositivos en redes locales mediante ARP, mientras que Nmap proporciona un análisis más profundo de servicios, puertos y sistema operativo.
 
-Netdiscover és més efectiu per detectar dispositius en xarxes locals, mentre que Nmap és més potent per analitzar serveis i seguretat.
+Además, se observa que los dispositivos de red domésticos aplican medidas de seguridad que limitan la información accesible, reflejando situaciones reales en entornos profesionales.
 
-***
-
-## **6. Conclusions finals**
-
-A través d’aquesta activitat s’ha pogut:
-
-*   Explorar una xarxa local real
-*   Detectar dispositius actius i inactius
-*   Analitzar diferències entre escaneig actiu i passiu
-*   Identificar limitacions reals de les eines de xarxa
-*   Comprendre el comportament dinàmic dels dispositius
-
-En conjunt, l’activitat permet adquirir una visió pràctica i realista de l’anàlisi de xarxes, destacant la importància d’utilitzar diferents eines i interpretar correctament els resultats.
-
+En conjunto, esta práctica permite desarrollar una visión práctica de la enumeración de redes y la importancia de interpretar correctamente los resultados obtenidos.
