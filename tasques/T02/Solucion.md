@@ -1,169 +1,164 @@
-# **DOCUMENTACIÓN EMPRESARIAL PLAN DE SOSTENIBILIDAD – PAUSA S.L.**
+# **PLA DE SOSTENIBILITAT INFORMÀTIC – COWORKING MATARÓ**
 
-# **1. Identidad de la empresa**
+## **1. Introducció**
 
-**Nombre:** Pausa S.L.  
-**Fundadores:** Santiago Hernández y Pau Guerrero 
+Aquest treball s’ha desenvolupat actuant com a consultors en sostenibilitat a través de l’empresa **Pausa S.L. (Santiago Hernández i Pau Guerrero)**, amb l’objectiu d’analitzar i millorar la infraestructura informàtica de l’empresa fictícia **Coworking Mataró**.
 
-**Sector:** Servicios informáticos  
-**Actividad principal:** Reparación, mantenimiento y optimización de equipos informáticos
+Actualment, l’empresa presenta una infraestructura poc eficient a nivell energètic i amb una gestió millorable dels residus tecnològics. Per aquest motiu, es planteja una transformació cap a un model de **sostenibilitat tecnològica basat en l’economia circular**.
 
-**Descripción:**
+Els objectius principals són:
 
-Pausa S.L. es una empresa tecnológica especializada en la **reparación y mantenimiento de dispositivos informáticos**, orientada tanto a particulares como a pequeñas empresas.
+* Reduir el consum energètic (objectiu mínim del 20%)
+* Allargar la vida útil dels equips
+* Millorar la gestió dels residus electrònics
+* Optimitzar el rendiment del sistema informàtic
 
-Nuestro enfoque se basa en **alargar la vida útil de los equipos**, reduciendo costes para el cliente y minimizando el impacto ambiental.
+## **2. Relació amb els ODS**
 
-# **2. Misión, visión y valores**
+Aquest projecte està alineat amb els següents Objectius de Desenvolupament Sostenible:
 
-## **Misión**
+* **ODS 12 – Producció i consum responsables** → Reutilització de hardware
+* **ODS 13 – Acció pel clima** → Reducció del consum energètic
+* **ODS 9 – Indústria, innovació i infraestructures** → Millora tecnològica eficient
 
-Ofrecer servicios de reparación informática eficientes, accesibles y sostenibles, alargando la vida útil de los dispositivos y reduciendo la generación de residuos electrónicos.
+## **3. Fase 1: Diagnòstic i Auditoria**
 
-## **Visión**
+### **3.1 Situació actual**
 
-Convertirnos en una empresa referente en servicios IT sostenibles, promoviendo un modelo basado en la reutilización y la eficiencia energética.
+L’empresa disposa de:
 
-## **Valores**
+* 20 PCs de sobretaula (2018) amb HDD, 4GB RAM i processadors poc eficients
+* 1 servidor físic amb funcionament continu (24/7)
+* Magatzem amb monitors i cablejat sense inventari
 
-* Sostenibilidad
-* Transparencia
-* Eficiencia
-* Innovación práctica
-* Cercanía con el cliente
+### **3.2 Checklist d’auditoria**
 
-# **3. Modelo de negocio**
+| Equip    | Estat tècnic     | Problema detectat        | Impacte ambiental     |
+| -------- | ---------------- | ------------------------ | --------------------- |
+| PCs (20) | Obsolets         | Rendiment baix, HDD lent | Alt consum energètic  |
+| CPU      | Sobreescalfament | Ineficiència             | Augment de consum     |
+| Servidor | Sobredimensionat | 24/7 actiu               | Consum elevat         |
+| Monitors | Sense ús         | No reutilitzats          | Residus electrònics   |
+| Cables   | Desorganitzats   | Mala gestió              | Dificultat reciclatge |
 
-## **Servicios principales**
+### **3.3 Aspectes ASG (Ambientals, Socials i Governança)**
 
-* Reparación de ordenadores
-* Sustitución de componentes
-* Optimización de sistemas
-* Asesoramiento tecnológico
+* **Ambientals:** consum energètic elevat, residus electrònics
+* **Socials:** ús poc eficient dels equips per part dels usuaris
+* **Governança:** manca de protocols i control dels recursos IT
 
-## **Clientes objetivo**
+## **4. Fase 2: Solucions – Hardware Circular**
 
-* Particulares
-* Autónomos
-* Pequeñas empresas
+### **4.1 Pla de revitalització**
 
-## **Propuesta de valor**
+Es proposen millores sense substituir completament els equips:
 
-* Reparamos antes de reemplazar
-* Reducimos costes al cliente
-* Disminuimos el impacto ambiental
+* Substitució de **HDD per SSD (500GB)**
+* Ampliació de **RAM a 8GB**
+* Neteja i optimització dels sistemes
+* Reducció de càrrega del servidor o migració progressiva al cloud
 
-# **4. Compromiso con la sostenibilidad**
+### **4.2 Selecció de hardware sostenible**
 
-En Pausa S.L. entendemos la sostenibilidad como una parte clave del negocio, integrando criterios ambientales, sociales y de gestión dentro de nuestra actividad.
+En futures adquisicions:
 
-## **ODS alineados**
+* Components amb certificació **Energy Star o EPEAT**
+* Priorització d’**equip reacondicionat**
+* Compra responsable basada en durabilitat
 
-* ODS 12 → Consumo responsable
-* ODS 13 → Acción climática
-* ODS 8 → Trabajo digno
+### **4.3 Beneficis**
 
-Nuestra actividad contribuye directamente a estos objetivos al **reducir residuos electrónicos y fomentar el uso responsable de la tecnología**.
+* Reducció del consum energètic
+* Augment de rendiment
+* Allargament de vida útil
+* Reducció de residus
 
-# **5. Análisis interno (diagnóstico realista)**
+## **5. Fase 3: Guia de Bones Pràctiques Digitals**
 
-## **Situación actual**
+### **5.1 Protocols per als usuaris**
 
-* Uso de componentes nuevos en muchas reparaciones
-* Generación de residuos electrónicos
-* Falta de sistema de reciclaje estructurado
-* Dependencia del transporte para recoger equipos
+**Estalvi energètic:**
 
-## **Problemas detectados**
+* Activar mode suspensió
+* Apagar equips fora d’horari
+* Control de brillantor i consum
 
-* Impacto ambiental moderado
-* Falta de procesos sostenibles definidos
-* Oportunidad clara de mejora
+**Gestió de dades:**
 
-# **6. Grupos de interés (stakeholders)**
+* Eliminació de fitxers duplicats
+* Ús eficient de serveis cloud
+* Còpies de seguretat periòdiques
 
-## **Identificación**
+**Ús responsable:**
 
-* Clientes
-* Trabajadores (nosotros)
-* Proveedores
-* Medio ambiente
+* No instal·lar software innecessari
+* Manteniment bàsic
+* Actualitzacions del sistema
 
-## **Expectativas**
+Aquestes mesures es poden entregar com a **infografia resum per als usuaris**.
 
-| Grupo          | Expectativas                     |
-| -------------- | -------------------------------- |
-| Clientes       | Precio justo, rapidez, confianza |
-| Trabajadores   | Estabilidad, organización        |
-| Proveedores    | Relación estable                 |
-| Medio ambiente | Reducción de residuos            |
+## **6. Fase 4: Pla de Sostenibilitat Integral**
 
-# **7. Estrategia de sostenibilidad**
+### **6.1 Full de ruta**
 
-## **Línea 1: Acción ambiental**
+**Curt termini (0–6 mesos):**
 
-* Reutilización de componentes
-* Gestión responsable de residuos electrónicos
-* Reducción del uso de materiales nuevos
+* Substitució HDD → SSD
+* Ampliació RAM
+* Organització del magatzem
+* Implementació de bones pràctiques
 
-## **Línea 2: Acción social/gobernanza**
+**Mitjà termini (6–12 mesos):**
 
-* Transparencia con clientes
-* Concienciación tecnológica
-* Mejora de procesos internos
+* Migració parcial al cloud
+* Aplicació de protocols sostenibles
+* Revisió del consum
 
-# **8. Acciones concretas**
+**Llarg termini (12+ mesos):**
 
-## Acción ambiental
+* Renovació progressiva del hardware
+* Integració de criteris sostenibles en compres
+* Auditoria periòdica
 
-Implementación de un sistema de **reutilización y reciclaje de componentes**:
+### **6.2 Protocol de gestió de residus (RAEE)**
 
-* Clasificación de piezas
-* Reutilización de hardware funcional
-* Gestión con puntos autorizados
+* Classificació del material obsolet
+* Reutilització de components funcionals
+* Transport a punts autoritzats
+* Registre dels equips reciclats
 
-## Acción social
+### **6.3 Grups d’interès**
 
-Creación de una **guía de uso responsable para clientes**:
+* Usuaris del coworking
+* Administració
+* Proveïdors tecnològics
+* Medi ambient
 
-* Consejos de mantenimiento
-* Ahorro energético
-* Buenas prácticas digitales
+### **6.4 KPIs (indicadors de seguiment)**
 
-# **9. Planificación**
+**PUE (Power Usage Effectiveness):**  
+Relació entre energia total consumida i energia destinada als equips IT.
 
-## **Cronograma (6 meses)**
+> Objectiu: reduir el valor actual mitjançant optimització del sistema
 
-* Mes 1 → Análisis
-* Mes 2 → Preparación
-* Mes 3 → Implementación reciclaje
-* Mes 4 → Formación cliente
-* Mes 5 → Aplicación
-* Mes 6 → Evaluación
+**Taxa de reutilització de hardware:**
 
-## **Riesgos**
+> (Components reutilitzats / total components) × 100
 
-* Aumento de costes
-* Baja implicación del cliente
+**Altres indicadors:**
 
-## **Soluciones**
+* Reducció consum energètic ≥ 20%
+* % equips optimitzats
+* Nombre dispositius reciclats
 
-* Uso de materiales reutilizados
-* Comunicación clara de beneficios
+## **7. Conclusions**
 
-# **10. Indicadores (KPIs)**
+L’anàlisi realitzada mostra que Coworking Mataró presenta una infraestructura informàtica amb un alt marge de millora en termes d’eficiència i sostenibilitat.
 
-* Reducción de residuos (%)
-* % de piezas reutilizadas
-* % de equipos reparados vs sustituidos
-* Nivel de satisfacción del cliente
+Mitjançant la implementació de mesures basades en l’economia circular, com la reutilització de hardware i la millora dels equips existents, es pot aconseguir una reducció significativa del consum energètic i dels residus electrònics.
 
-# **11. Conclusión empresarial**
+El pla proposat no només millora el rendiment del sistema, sinó que també permet reduir costos operatius i reforçar la imatge de l’empresa com a organització compromesa amb la sostenibilitat.
 
-En Pausa S.L. consideramos que la sostenibilidad no es un añadido, sino una forma de trabajar.
-
-Nuestro modelo basado en la reparación, reutilización y optimización tecnológica nos permite ofrecer un servicio eficiente, económico y alineado con los retos actuales del sector IT.
-
-Este plan nos permite mejorar como empresa, reducir nuestro impacto y posicionarnos como una opción responsable dentro del mercado.
+En definitiva, es demostra que és possible optimitzar un sistema informàtic sense necessitat de grans inversions, mitjançant una gestió més eficient i responsable dels recursos tecnològics.
 
 
