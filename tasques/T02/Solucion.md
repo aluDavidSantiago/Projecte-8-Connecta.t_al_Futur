@@ -1,7 +1,5 @@
 # **DOCUMENTACIÓN EMPRESARIAL PLAN DE SOSTENIBILIDAD– PAUSA S.L.**
 
-***
-
 # **1. Identidad de la empresa**
 
 **Nombre:** Pausa S.L.  
@@ -14,8 +12,6 @@
 Pausa S.L. es una empresa tecnológica especializada en la **reparación y mantenimiento de dispositivos informáticos**, orientada tanto a particulares como a pequeñas empresas.
 
 Nuestro enfoque se basa en **alargar la vida útil de los equipos**, reduciendo costes para el cliente y minimizando el impacto ambiental.
-
-***
 
 # **2. Misión, visión y valores**
 
@@ -34,8 +30,6 @@ Convertirnos en una empresa referente en servicios IT sostenibles, promoviendo u
 * Eficiencia
 * Innovación práctica
 * Cercanía con el cliente
-
-***
 
 # **3. Modelo de negocio**
 
@@ -58,8 +52,6 @@ Convertirnos en una empresa referente en servicios IT sostenibles, promoviendo u
 * Reducimos costes al cliente
 * Disminuimos el impacto ambiental
 
-***
-
 # **4. Compromiso con la sostenibilidad**
 
 En Pausa S.L. entendemos la sostenibilidad como una parte clave del negocio, integrando criterios ambientales, sociales y de gestión dentro de nuestra actividad.
@@ -71,8 +63,6 @@ En Pausa S.L. entendemos la sostenibilidad como una parte clave del negocio, int
 * ODS 8 → Trabajo digno
 
 Nuestra actividad contribuye directamente a estos objetivos al **reducir residuos electrónicos y fomentar el uso responsable de la tecnología**.
-
-***
 
 # **5. Análisis interno (diagnóstico realista)**
 
@@ -88,8 +78,6 @@ Nuestra actividad contribuye directamente a estos objetivos al **reducir residuo
 * Impacto ambiental moderado
 * Falta de procesos sostenibles definidos
 * Oportunidad clara de mejora
-
-***
 
 # **6. Grupos de interés (stakeholders)**
 
@@ -109,8 +97,6 @@ Nuestra actividad contribuye directamente a estos objetivos al **reducir residuo
 | Proveedores    | Relación estable                 |
 | Medio ambiente | Reducción de residuos            |
 
-***
-
 # **7. Estrategia de sostenibilidad**
 
 ## **Línea 1: Acción ambiental**
@@ -124,8 +110,6 @@ Nuestra actividad contribuye directamente a estos objetivos al **reducir residuo
 * Transparencia con clientes
 * Concienciación tecnológica
 * Mejora de procesos internos
-
-***
 
 # **8. Acciones concretas**
 
@@ -145,8 +129,6 @@ Creación de una **guía de uso responsable para clientes**:
 * Ahorro energético
 * Buenas prácticas digitales
 
-***
-
 # **9. Planificación**
 
 ## **Cronograma (6 meses)**
@@ -158,8 +140,6 @@ Creación de una **guía de uso responsable para clientes**:
 * Mes 5 → Aplicación
 * Mes 6 → Evaluación
 
-***
-
 ## **Riesgos**
 
 * Aumento de costes
@@ -170,16 +150,12 @@ Creación de una **guía de uso responsable para clientes**:
 * Uso de materiales reutilizados
 * Comunicación clara de beneficios
 
-***
-
 # **10. Indicadores (KPIs)**
 
 * Reducción de residuos (%)
 * % de piezas reutilizadas
 * % de equipos reparados vs sustituidos
 * Nivel de satisfacción del cliente
-
-***
 
 # **11. Conclusión empresarial**
 
