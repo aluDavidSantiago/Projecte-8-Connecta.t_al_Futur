@@ -4,6 +4,7 @@
 
 **Nombre:** Pausa S.L.  
 **Fundadores:** Santiago Hernández y Pau Guerrero 
+
 **Sector:** Servicios informáticos  
 **Actividad principal:** Reparación, mantenimiento y optimización de equipos informáticos
 
