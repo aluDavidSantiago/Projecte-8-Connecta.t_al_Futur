@@ -1,6 +1,8 @@
 <p align="center">
+  
+<h1 align="center">Proyecto 8 - Connecta.t_al_Futur</h1>
 
-# Proyecto 8  
+
 ## Conéctate al futuro: el reto de la digitalización real  
 
 </p>
